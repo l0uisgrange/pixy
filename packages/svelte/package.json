@@ -1,0 +1,50 @@
+{
+    "name": "@picto/svelte",
+    "version": "0.0.1",
+    "private": false,
+    "description": "A free open source library of precision-designed vectorized icons",
+    "author": "l0uisgrange",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/l0uisgrange/picto.git"
+    },
+    "homepage": "https://picto.grangelouis.ch",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "exports": {
+        ".": {
+            "svelte": "./dist/svelte/index.js",
+            "import": "./dist/svelte/index.mjs",
+            "require": "./dist/svelte/index.js",
+            "types": "./dist/svelte/index.d.ts"
+        },
+        "./react": {
+            "import": "./dist/react/index.mjs",
+            "require": "./dist/react/index.js",
+            "types": "./dist/react/index.d.ts"
+        },
+        "./vue": {
+            "import": "./dist/vue/index.mjs",
+            "require": "./dist/vue/index.js",
+            "types": "./dist/vue/index.d.ts"
+        },
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+    },
+    "devDependencies": {
+    },
+    "keywords": [
+        "svelte",
+        "react",
+        "vue",
+        "icons",
+        "svg",
+        "microingénierie",
+        "epfl"
+    ]
+}
