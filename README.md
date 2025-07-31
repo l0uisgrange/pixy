@@ -5,7 +5,7 @@
 
 # 🏜️ Picto Icons
 
-**Picto** is an open-source collection of high-quality ✨ icons, inspired by IBM's Carbon Design System, optimized for Svelte, React, and Vue. Our goal is to provide lightweight and performant icons, easy to integrate into your projects.
+**Picto** is an open-source collection of high-quality ✨ icons, inspired by IBM's Carbon Design System, optimized for **Svelte, React, and Vue**. Our goal is to provide lightweight and performant icons, easy to integrate into your projects.
 
 [Icons](https://picto.grangelouis.ch/icons) – [Documentation](https://picto.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/picto/discussions)
 
