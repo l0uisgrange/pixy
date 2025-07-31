@@ -9,8 +9,6 @@
 
 [Icons](https://picto.grangelouis.ch/icons) – [Documentation](https://picto.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/picto/discussions)
 
----
-
 ## Packages
 
 | Package | Version | Links |
