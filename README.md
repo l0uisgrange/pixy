@@ -9,6 +9,9 @@
 
 [Icons](https://picto.grangelouis.ch/icons) – [Documentation](https://picto.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/picto/discussions)
 
+## Preview
+<img src="https://github.com/user-attachments/assets/bbf8b4c3-c4b5-4d5c-a641-d036f171fb6e" width="250" />
+
 ## Packages
 
 | Package | Version | Links |
