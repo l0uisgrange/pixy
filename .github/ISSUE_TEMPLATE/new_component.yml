@@ -1,0 +1,21 @@
+name: ⚡️ Icon Request
+description: Request a new or modified icon for the package.
+type: "feature"
+assignees:
+  - l0uisgrange
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Icon Name
+      description: How would the icon be called?
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or Images
+      description: What does the icon look like?
+      placeholder: Links, sketches, etc.
+    validations:
+      required: true

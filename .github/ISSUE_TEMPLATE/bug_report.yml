@@ -1,0 +1,25 @@
+name: 🐞 Bug Report
+description: Report a problem or error when using Zap.
+type: ["bug"]
+assignees:
+  - l0uisgrange
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of the bug.
+      placeholder: Describe the bug here...
+    validations:
+      required: true
+  - type: dropdown
+    id: package_version
+    attributes:
+      label: Pixy Version
+      description: The version of Pixy you are using.
+      options:
+        - Development
+        - Other (default)
+      default: 1
+    validations:
+      required: true

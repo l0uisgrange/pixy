@@ -1,1 +1,3 @@
 /.idea/
+/packages/svelte/.svelte-kit/
+/packages/svelte/node_modules/

@@ -1,0 +1,14 @@
+{
+    "name": "@pixy/react",
+    "version": "0.0.1",
+    "private": false,
+    "description": "A free open-source library of precision-designed vectorized icons",
+    "author": "grangelouis",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/l0uisgrange/pixy.git"
+    },
+    "homepage": "https://pixy.grangelouis.ch",
+    "type": "module"
+}
