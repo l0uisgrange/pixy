@@ -10,5 +10,25 @@
         "url": "https://github.com/l0uisgrange/pixy.git"
     },
     "homepage": "https://pixy.grangelouis.ch",
-    "type": "module"
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "files": ["dist"],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "react": "./dist/index.js"
+        }
+    },
+    "keywords": [
+        "pixy",
+        "react",
+        "library",
+        "icons",
+        "svg"
+    ],
+    "devDependencies": {
+        "react": "^19.1.1"
+    }
 }

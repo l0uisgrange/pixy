@@ -1,3 +1,5 @@
 /.idea/
 /packages/svelte/.svelte-kit/
 /packages/svelte/node_modules/
+/packages/svelte/src/
+/packages/svelte/dist/
