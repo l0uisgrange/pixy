@@ -19,7 +19,7 @@ const main = async () => {
         fs.mkdirSync(config.componentsDir, { recursive: true });
         fs.copyFileSync(config.preprocessSourceFile, config.preprocessDestFile);
         const svgFiles = fs.readdirSync(config.sourceDir).filter(file => file.endsWith('.svg'));
-        let indexContent = `// @ts-nocheck\n export { pixy } from './preprocess';\n\n`;
+        let indexContent = `// @ts-nocheck\n export { pixy } from './preprocess.js';\n\n`;
         for (const file of svgFiles) {
             const index = svgFiles.indexOf(file);
             const iconName = path.parse(file).name;

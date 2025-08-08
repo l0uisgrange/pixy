@@ -1,7 +1,8 @@
 export const pixy = () => {
     return {
         name: 'pixy',
-        markup: ({ content }) => {
+        apply: 'build',
+        transform: ({ content }) => {
             let changed = false;
 
             const newContent = content.replace(

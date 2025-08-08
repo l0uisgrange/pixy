@@ -11,13 +11,17 @@
         "type": "git",
         "url": "https://github.com/l0uisgrange/pixy.git"
     },
-    "exports": [
-        {
+    "exports": {
+        ".": {
             "svelte": "./dist/index.js",
             "types": "./dist/index.d.ts",
             "default": "./dist/index.js"
+        },
+        "./icons/*": {
+            "import": "./dist/icons/*.svelte",
+            "types": "./dist/icons/*.svelte.d.ts"
         }
-    ],
+    },
     "files": [
         "dist"
     ],
