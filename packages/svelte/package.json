@@ -1,23 +1,26 @@
 {
     "name": "@pixy/svelte",
-    "version": "0.0.1",
+    "version": "0.0.1-alpha.1",
     "private": false,
     "description": "A free open-source library of precision-designed vectorized icons",
     "author": "grangelouis",
     "license": "MIT",
+    "homepage": "https://pixy.grangelouis.ch",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "https://github.com/l0uisgrange/pixy.git"
     },
-    "homepage": "https://pixy.grangelouis.ch",
-    "type": "module",
     "exports": [
         {
-            "svelte":  "./dist/index.js",
-            "types":  "./dist/index.d.ts"
+            "svelte": "./dist/index.js",
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
         }
     ],
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "keywords": [
         "pixy",
         "svelte",
@@ -26,15 +29,20 @@
         "svg"
     ],
     "scripts": {
-        "generate": "tsx generate.ts",
-        "build": "npm run generate && npx @sveltejs/package"
+        "pregenerate": "rm -rf src",
+        "generate": "tsx scripts/generate.ts",
+        "prebuild": "rm -rf dist && npm run generate",
+        "build": "tsc -p ./tsconfig.json && npx @sveltejs/package",
+        "postbuild": "rm -r .svelte-kit"
     },
     "dependencies": {
         "svelte": "^5.38.0"
     },
     "devDependencies": {
         "@sveltejs/package": "^2.4.1",
+        "@types/node": "^24.2.0",
         "svelte-check": "^4.3.1",
+        "tsx": "^4.20.3",
         "typescript": "^5.9.2"
     }
 }

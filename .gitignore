@@ -1,5 +1,6 @@
 /.idea/
 /packages/svelte/.svelte-kit/
 /packages/svelte/node_modules/
-/packages/svelte/src/
+/packages/svelte/src/lib/icons
+/packages/svelte/src/lib/index.ts
 /packages/svelte/dist/
