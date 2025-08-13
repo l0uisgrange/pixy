@@ -29,7 +29,8 @@
     "files": [
         "dist",
         "README.md",
-        "package.json"
+        "package.json",
+        "LICENSE"
     ],
     "keywords": [
         "pixy",

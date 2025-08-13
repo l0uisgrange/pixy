@@ -2,15 +2,16 @@ import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
 
+// @ts-ignore
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const config = {
     iconDir: path.resolve(__dirname, '../Icon.tsx'),
-    iconFinalDir: path.resolve(__dirname, './../src/lib/Icon.tsx'),
+    iconFinalDir: path.resolve(__dirname, './../src/Icon.tsx'),
     sourceDir: path.resolve(__dirname, '../../../icons'),
-    componentsDir: path.resolve(__dirname, './../src/lib/icons'),
-    mainIndexFile: path.resolve(__dirname, './../src/lib/index.ts'),
+    componentsDir: path.resolve(__dirname, './../src/icons'),
+    mainIndexFile: path.resolve(__dirname, './../src/index.ts'),
 };
 
 const main = async () => {
@@ -30,28 +31,23 @@ const main = async () => {
             const svgContent = svgContentMatch ? svgContentMatch[1].trim() : '';
 
             const componentContent = `import * as React from 'react';
-import Icon, { IconProps } from './../Icon';
+import Icon from './../Icon';
 
-const Star = React.forwardRef<SVGSVGElement, Omit<IconProps, 'children'>>(function Star(
-props,
-ref
-) {
+export default function ${componentName}(props: React.ComponentProps<'svg'>) {
     return (
-        <Icon ref={ref} {...props}>
+        <Icon {...props}>
             ${svgContent}
         </Icon>
     );
-});
-
-export default Star;`;
+}`;
 
             fs.writeFileSync(path.join(config.componentsDir, `${componentName}.tsx`), componentContent);
 
             const progress = `${index + 1}/${svgFiles.length}`;
             const percentage = ((index + 1) / svgFiles.length * 100).toFixed(0);
-            console.log(`[${progress}, ${percentage}%] Generated: ${componentName}.svelte`);
+            console.log(`[${progress}, ${percentage}%] Generated: ${componentName}.tsx`);
 
-            indexContent += `export { default as ${componentName} } from './icons/${componentName}.svelte';\n`;
+            indexContent += `export { default as ${componentName} } from './icons/${componentName}.js';\n`;
         }
 
         fs.writeFileSync(config.mainIndexFile, indexContent);
@@ -62,4 +58,5 @@ export default Star;`;
     }
 };
 
+// @ts-ignore
 await main();

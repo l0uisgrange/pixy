@@ -16,20 +16,21 @@
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
-            "svelte": "./dist/index.js",
-            "import": "./dist/index.js"
+            "import": "./dist/index.js",
+            "react-server": "./dist/index.js"
         },
         "./icons/*": {
             "types": "./dist/icons/*.d.ts",
-            "svelte": "./dist/icons/*",
-            "import": "./dist/icons/*"
+            "import": "./dist/icons/*",
+            "react-server": "./dist/icons/*"
         }
     },
     "typings": "dist/index.d.ts",
     "files": [
         "dist",
         "README.md",
-        "package.json"
+        "package.json",
+        "LICENSE"
     ],
     "keywords": [
         "pixy",
@@ -44,16 +45,15 @@
         "font awesome"
     ],
     "scripts": {
-        "prebuild": "tsx ./scripts/generate.ts"
+        "generate": "rm -r dist & tsx ./scripts/generate.ts",
+        "build": "tsc -p ./tsconfig.json"
     },
     "peerDependencies": {
         "react": ">=18.2.0"
     },
     "devDependencies": {
-        "@sveltejs/package": "^2.4.1",
         "@types/node": "^24.2.1",
         "@types/react": "^19.1.10",
-        "svelte-check": "^4.3.1",
         "tsx": "^4.20.4",
         "typescript": "^5.9.2"
     }

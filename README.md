@@ -1,7 +1,7 @@
-![](https://badgers.space/github/license/l0uigrange/pixy?theme=tailwind)
-![](https://badgers.space/github/checks/l0uigrange/pixy?theme=tailwind)
-![](https://badgers.space/github/contributors/l0uigrange/pixy?theme=tailwind)
-![](https://badgers.space/github/open-issues/l0uigrange/pixy?theme=tailwind)
+![](https://badgers.space/github/license/l0uisgrange/pixy?theme=tailwind)
+![](https://badgers.space/github/checks/l0uisgrange/pixy?theme=tailwind)
+![](https://badgers.space/github/contributors/l0uisgrange/pixy?theme=tailwind)
+![](https://badgers.space/github/open-issues/l0uisgrange/pixy?theme=tailwind)
 
 # 🏜️ Pixy Icons
 
@@ -19,9 +19,9 @@
 
 | Package | Version | Links |
 | :-------- | :------- | :--------- |
-| <img src="https://lucide.dev/framework-logos/js.svg" alt="JS logo" width="20" /> **`@pixy/js`** | ![](https://badgers.space/npm/version/pixy/js?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/js) |
-| <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> **`@pixy/react`** | ![](https://badgers.space/npm/version/pixy/react?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/react) | 
-| <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> **`@pixy/svelte`** | ![](https://badgers.space/npm/version/pixy/svelte?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/svelte) |
+| <img src="https://lucide.dev/framework-logos/js.svg" alt="JS logo" width="20" /> **`@pixy/js`** | ![](https://badgers.space/npm/version/@pixy/js?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/js) |
+| <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> **`@pixy/react`** | ![](https://badgers.space/npm/version/@pixy/react?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/react) | 
+| <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> **`@pixy/svelte`** | ![](https://badgers.space/npm/version/@pixy/svelte?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/svelte) |
 
 ## Contributing
 

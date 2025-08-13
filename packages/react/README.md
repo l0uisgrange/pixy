@@ -1,16 +1,15 @@
-![](https://badgers.space/npm/version/pixy/svelte?theme=tailwind)
-![](https://badgers.space/github/license/l0uigrange/pixy?theme=tailwind)
+![](https://badgers.space/npm/version/@pixy/react?theme=tailwind)
+![](https://badgers.space/github/license/l0uisgrange/pixy?theme=tailwind)
 
-# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/react.svg" alt="Svelte logo" width="20" /> React
+# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> React
 
 This package ships React components for the Pixy Icons collection.
 
-[Icons](https://pixy.grangelouis.ch/icons) – [Documentation](https://pixy.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/pixy/discussions)
+[Icons](https://pixy.grangelouis.ch/icons) – [Documentation](https://pixy.grangelouis.ch) — [Discussions](https://github.com/l0uisgrange/pixy/discussions)
 
 ## Preview
 
 <img src="https://github.com/user-attachments/assets/bbf8b4c3-c4b5-4d5c-a641-d036f171fb6e" width="250" alt="Icons Preview" />
-
 
 ## Installation
 
@@ -20,12 +19,14 @@ npm i @pixy/react
 
 ## Quick start
 
-```svelte
-<script lang="ts">
-    import { Circle, Star } from '@pixy/react';
-</script>
+```react
+import { Circle } from "@pixy/react"
 
-<Circle class="size-6 stroke-red stroke-3" />
+export default function Home() {
+    return (
+        <Circle />
+    )
+}
 ```
 
 ## License
