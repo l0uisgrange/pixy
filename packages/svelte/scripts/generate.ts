@@ -9,17 +9,14 @@ const config = {
     sourceDir: path.resolve(__dirname, '../../../icons'),
     componentsDir: path.resolve(__dirname, './../src/lib/icons'),
     mainIndexFile: path.resolve(__dirname, './../src/lib/index.ts'),
-    preprocessSourceFile: path.resolve(__dirname, './preprocess.ts'),
-    preprocessDestFile: path.resolve(__dirname, './../src/lib/preprocess.ts')
 };
 
 const main = async () => {
     try {
         console.log('——— Starting Svelte components generation');
         fs.mkdirSync(config.componentsDir, { recursive: true });
-        fs.copyFileSync(config.preprocessSourceFile, config.preprocessDestFile);
         const svgFiles = fs.readdirSync(config.sourceDir).filter(file => file.endsWith('.svg'));
-        let indexContent = `// @ts-nocheck\n export { pixy } from './preprocess.js';\n\n`;
+        let indexContent = ``;
         for (const file of svgFiles) {
             const index = svgFiles.indexOf(file);
             const iconName = path.parse(file).name;

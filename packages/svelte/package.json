@@ -7,23 +7,27 @@
     "license": "MIT",
     "homepage": "https://pixy.grangelouis.ch",
     "type": "module",
+    "sideEffects": false,
     "repository": {
         "type": "git",
         "url": "https://github.com/l0uisgrange/pixy.git"
     },
     "exports": {
         ".": {
-            "svelte": "./dist/index.js",
             "types": "./dist/index.d.ts",
-            "default": "./dist/index.js"
+            "svelte": "./dist/index.js",
+            "import": "./dist/index.js"
         },
         "./icons/*": {
-            "import": "./dist/icons/*.svelte",
-            "types": "./dist/icons/*.svelte.d.ts"
+            "types": "./dist/icons/*.d.ts",
+            "svelte": "./dist/icons/*",
+            "import": "./dist/icons/*"
         }
     },
     "files": [
-        "dist"
+        "dist",
+        "README.md",
+        "package.json"
     ],
     "keywords": [
         "pixy",
@@ -33,20 +37,17 @@
         "svg"
     ],
     "scripts": {
-        "pregenerate": "rm -rf src",
-        "generate": "tsx scripts/generate.ts",
-        "prebuild": "rm -rf dist && npm run generate",
-        "build": "tsc -p ./tsconfig.json && npx @sveltejs/package",
-        "postbuild": "rm -r .svelte-kit"
+        "prebuild": "tsx ./scripts/generate.ts",
+        "build": "svelte-package"
     },
-    "dependencies": {
-        "svelte": "^5.38.0"
+    "peerDependencies": {
+        "svelte": "^5.0.0"
     },
     "devDependencies": {
         "@sveltejs/package": "^2.4.1",
-        "@types/node": "^24.2.0",
+        "@types/node": "^24.2.1",
         "svelte-check": "^4.3.1",
-        "tsx": "^4.20.3",
+        "tsx": "^4.20.4",
         "typescript": "^5.9.2"
     }
 }
