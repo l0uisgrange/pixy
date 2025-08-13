@@ -7,6 +7,9 @@
 
 **Pixy** is an open-source collection of high-quality ✨ icons, inspired by IBM's Carbon Design System, optimized for **Svelte, React, and Vue**. The library provides lightweight and customizable icons, easy to integrate into your projects.
 
+> [!WARNING]
+> This package is currently **in preview**, but I hope it will be released in the fall.
+
 [Icons](https://pixy.grangelouis.ch/icons) – [Documentation](https://pixy.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/pixy/discussions)
 
 ## Preview
