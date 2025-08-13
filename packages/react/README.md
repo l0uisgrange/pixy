@@ -1,9 +1,9 @@
 ![](https://badgers.space/npm/version/pixy/svelte?theme=tailwind)
 ![](https://badgers.space/github/license/l0uigrange/pixy?theme=tailwind)
 
-# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> Svelte
+# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/react.svg" alt="Svelte logo" width="20" /> React
 
-This package ships Svelte components for the Pixy Icons collection.
+This package ships React components for the Pixy Icons collection.
 
 [Icons](https://pixy.grangelouis.ch/icons) – [Documentation](https://pixy.grangelouis.ch) — [Discussions](https://github.com/l0uigrange/pixy/discussions)
 
@@ -11,17 +11,18 @@ This package ships Svelte components for the Pixy Icons collection.
 
 <img src="https://github.com/user-attachments/assets/bbf8b4c3-c4b5-4d5c-a641-d036f171fb6e" width="250" alt="Icons Preview" />
 
+
 ## Installation
 
 ```sh
-npm i @pixy/svelte
+npm i @pixy/react
 ```
 
 ## Quick start
 
 ```svelte
 <script lang="ts">
-    import { Circle, Star } from '@pixy/svelte';
+    import { Circle, Star } from '@pixy/react';
 </script>
 
 <Circle class="size-6 stroke-red stroke-3" />

@@ -3,15 +3,16 @@
     "version": "0.0.1-alpha.1",
     "private": false,
     "description": "A free open-source library of precision-designed vectorized icons",
-    "author": "grangelouis",
+    "author": "Grange Louis",
     "license": "MIT",
     "homepage": "https://pixy.grangelouis.ch",
-    "type": "module",
-    "sideEffects": false,
+    "bugs": "https://github.com/l0uisgrange/pixy/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/l0uisgrange/pixy.git"
+        "url": "git+https://github.com/l0uisgrange/pixy.git"
     },
+    "type": "module",
+    "sideEffects": false,
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
@@ -33,8 +34,13 @@
         "pixy",
         "svelte",
         "library",
+        "icon",
         "icons",
-        "svg"
+        "svg",
+        "lucide",
+        "feather",
+        "phosphore",
+        "font awesome"
     ],
     "scripts": {
         "prebuild": "tsx ./scripts/generate.ts",
