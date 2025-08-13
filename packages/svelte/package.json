@@ -25,6 +25,7 @@
             "import": "./dist/icons/*"
         }
     },
+    "typings": "dist/index.d.ts",
     "files": [
         "dist",
         "README.md",

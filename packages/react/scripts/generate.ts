@@ -6,8 +6,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const config = {
-    iconDir: path.resolve(__dirname, '../Icon.svelte'),
-    iconFinalDir: path.resolve(__dirname, './../src/lib/Icon.svelte'),
+    iconDir: path.resolve(__dirname, '../Icon.tsx'),
+    iconFinalDir: path.resolve(__dirname, './../src/lib/Icon.tsx'),
     sourceDir: path.resolve(__dirname, '../../../icons'),
     componentsDir: path.resolve(__dirname, './../src/lib/icons'),
     mainIndexFile: path.resolve(__dirname, './../src/lib/index.ts'),
@@ -15,7 +15,7 @@ const config = {
 
 const main = async () => {
     try {
-        console.log('——— Starting Svelte components generation');
+        console.log('——— Starting React components generation');
         fs.mkdirSync(config.componentsDir, { recursive: true });
         fs.copyFileSync(config.iconDir, config.iconFinalDir);
         const svgFiles = fs.readdirSync(config.sourceDir).filter(file => file.endsWith('.svg'));
@@ -29,18 +29,23 @@ const main = async () => {
             const svgContentMatch = svgFileContent.match(/<svg[^>]*>([\s\S]*)<\/svg>/);
             const svgContent = svgContentMatch ? svgContentMatch[1].trim() : '';
 
-            const componentContent = `<script lang="ts">
-    import Icon from './../Icon.svelte';
-    import type { SVGAttributes } from 'svelte/elements';
+            const componentContent = `import * as React from 'react';
+import Icon, { IconProps } from './../Icon';
 
-    let rest: SVGAttributes<SVGElement> = $props();
-</script>
+const Star = React.forwardRef<SVGSVGElement, Omit<IconProps, 'children'>>(function Star(
+props,
+ref
+) {
+    return (
+        <Icon ref={ref} {...props}>
+            ${svgContent}
+        </Icon>
+    );
+});
 
-<Icon {...rest}>
-    ${svgContent}
-</Icon>`;
+export default Star;`;
 
-            fs.writeFileSync(path.join(config.componentsDir, `${componentName}.svelte`), componentContent);
+            fs.writeFileSync(path.join(config.componentsDir, `${componentName}.tsx`), componentContent);
 
             const progress = `${index + 1}/${svgFiles.length}`;
             const percentage = ((index + 1) / svgFiles.length * 100).toFixed(0);

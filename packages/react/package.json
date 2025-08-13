@@ -1,34 +1,60 @@
 {
     "name": "@pixy/react",
-    "version": "0.0.1",
+    "version": "0.0.1-alpha.1",
     "private": false,
     "description": "A free open-source library of precision-designed vectorized icons",
-    "author": "grangelouis",
+    "author": "Grange Louis",
     "license": "MIT",
+    "homepage": "https://pixy.grangelouis.ch",
+    "bugs": "https://github.com/l0uisgrange/pixy/issues",
     "repository": {
         "type": "git",
-        "url": "https://github.com/l0uisgrange/pixy.git"
+        "url": "git+https://github.com/l0uisgrange/pixy.git"
     },
-    "homepage": "https://pixy.grangelouis.ch",
     "type": "module",
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.ts",
-    "files": ["dist"],
+    "sideEffects": false,
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
-            "react": "./dist/index.js"
+            "svelte": "./dist/index.js",
+            "import": "./dist/index.js"
+        },
+        "./icons/*": {
+            "types": "./dist/icons/*.d.ts",
+            "svelte": "./dist/icons/*",
+            "import": "./dist/icons/*"
         }
     },
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "package.json"
+    ],
     "keywords": [
         "pixy",
         "react",
         "library",
+        "icon",
         "icons",
-        "svg"
+        "svg",
+        "lucide",
+        "feather",
+        "phosphore",
+        "font awesome"
     ],
+    "scripts": {
+        "prebuild": "tsx ./scripts/generate.ts"
+    },
+    "peerDependencies": {
+        "react": ">=18.2.0"
+    },
     "devDependencies": {
-        "react": "^19.1.1"
+        "@sveltejs/package": "^2.4.1",
+        "@types/node": "^24.2.1",
+        "@types/react": "^19.1.10",
+        "svelte-check": "^4.3.1",
+        "tsx": "^4.20.4",
+        "typescript": "^5.9.2"
     }
 }

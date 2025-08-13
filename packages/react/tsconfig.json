@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"target": "ESNext",
+		"jsx": "react",
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"declaration": true,
+		"noImplicitAny": false,
+		"sourceMap": true,
+		"strict": true,
+		"outDir": "./dist",
+		"moduleResolution": "bundler",
+	}
+}
