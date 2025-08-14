@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 const config = {
     iconDir: path.resolve(__dirname, '../Icon.tsx'),
     iconFinalDir: path.resolve(__dirname, './../src/Icon.tsx'),
-    sourceDir: path.resolve(__dirname, '../../../icons'),
+    sourceDir: path.resolve(__dirname, '../../static/icons'),
     componentsDir: path.resolve(__dirname, './../src/icons'),
     mainIndexFile: path.resolve(__dirname, './../src/index.ts'),
 };
