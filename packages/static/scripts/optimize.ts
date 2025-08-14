@@ -2,7 +2,7 @@ import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { optimize, type Plugin } from 'svgo';
 
-const dir = resolve(process.argv[2] || './dist');
+const dir = resolve(process.argv[2] || './icons');
 
 (async () => {
     const files = (await readdir(dir)).filter(f => f.toLowerCase().endsWith('.svg'));
