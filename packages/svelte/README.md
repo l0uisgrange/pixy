@@ -13,7 +13,7 @@ This package ships Svelte components for the Pixy Icons collection.
 
 ## Installation
 
-```sh
+```shell
 npm i @pixy/svelte
 ```
 
