@@ -16,16 +16,15 @@
     "exports": {
         ".": {
             "types": "./dist/index.d.ts",
-            "import": "./dist/index.js",
-            "react-server": "./dist/index.js"
+            "import": "./dist/index.js"
         },
         "./icons/*": {
             "types": "./dist/icons/*.d.ts",
-            "import": "./dist/icons/*",
-            "react-server": "./dist/icons/*"
+            "import": "./dist/icons/*"
         }
     },
-    "typings": "dist/index.d.ts",
+    "main": "./dist/index.js",
+    "typings": "./dist/index.d.ts",
     "files": [
         "dist",
         "README.md",
@@ -45,7 +44,7 @@
         "font awesome"
     ],
     "scripts": {
-        "generate": "rm -r dist & tsx ./scripts/generate.ts",
+        "prebuild": "rm -r dist & tsx ./scripts/generate.ts",
         "build": "tsc -p ./tsconfig.json"
     },
     "peerDependencies": {
