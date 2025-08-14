@@ -1,0 +1,58 @@
+{
+    "name": "@pixy/svg",
+    "version": "0.0.1-alpha.5",
+    "private": false,
+    "description": "A free open-source library of precision-designed vectorized icons",
+    "author": "Grange Louis",
+    "license": "MIT",
+    "homepage": "https://pixy.grangelouis.ch",
+    "bugs": "https://github.com/l0uisgrange/pixy/issues",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/l0uisgrange/pixy.git"
+    },
+    "type": "module",
+    "sideEffects": false,
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "svelte": "./dist/index.js",
+            "import": "./dist/index.js"
+        },
+        "./icons/*": {
+            "types": "./dist/icons/*.d.ts",
+            "svelte": "./dist/icons/*",
+            "import": "./dist/icons/*"
+        }
+    },
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "package.json",
+        "LICENSE"
+    ],
+    "keywords": [
+        "pixy",
+        "svelte",
+        "library",
+        "icon",
+        "icons",
+        "svg",
+        "lucide",
+        "feather",
+        "phosphore",
+        "font awesome"
+    ],
+    "scripts": {
+        "optimize": "tsx ./scripts/optimize.ts",
+        "prebuild": "tsx ./scripts/generate.ts",
+        "build": "svelte-package"
+    },
+    "devDependencies": {
+        "@types/node": "^24.2.1",
+        "svgo": "^4.0.0",
+        "tsx": "^4.20.4",
+        "typescript": "^5.9.2"
+    }
+}

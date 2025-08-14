@@ -1,14 +1,1 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 2V2.5H19V2V1.5H5V2ZM20 3H19.5V21H20H20.5V3H20ZM19 22V21.5H5V22V22.5H19V22ZM4 21H4.5V3H4H3.5V21H4ZM5 22V21.5C4.72386 21.5 4.5 21.2761 4.5 21H4H3.5C3.5 21.8284 4.17157 22.5 5 22.5V22ZM20 21H19.5C19.5 21.2761 19.2761 21.5 19 21.5V22V22.5C19.8284 22.5 20.5 21.8284 20.5 21H20ZM19 2V2.5C19.2761 2.5 19.5 2.72386 19.5 3H20H20.5C20.5 2.17157 19.8284 1.5 19 1.5V2ZM5 2V1.5C4.17157 1.5 3.5 2.17157 3.5 3H4H4.5C4.5 2.72386 4.72386 2.5 5 2.5V2Z" fill="black"/>
-<path d="M7 6H17" stroke="black"/>
-<rect x="7" y="5" width="10" height="2" fill="black"/>
-<rect x="7" y="17" width="2" height="2" fill="black"/>
-<rect x="11" y="17" width="2" height="2" fill="black"/>
-<rect x="15" y="17" width="2" height="2" fill="black"/>
-<rect x="15" y="13" width="2" height="2" fill="black"/>
-<rect x="15" y="9" width="2" height="2" fill="black"/>
-<rect x="11" y="9" width="2" height="2" fill="black"/>
-<rect x="11" y="13" width="2" height="2" fill="black"/>
-<rect x="7" y="13" width="2" height="2" fill="black"/>
-<rect x="7" y="9" width="2" height="2" fill="black"/>
-</svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 2V2.5H19V2V1.5H5V2ZM20 3H19.5V21H20H20.5V3H20ZM19 22V21.5H5V22V22.5H19V22ZM4 21H4.5V3H4H3.5V21H4ZM5 22V21.5C4.72386 21.5 4.5 21.2761 4.5 21H4H3.5C3.5 21.8284 4.17157 22.5 5 22.5V22ZM20 21H19.5C19.5 21.2761 19.2761 21.5 19 21.5V22V22.5C19.8284 22.5 20.5 21.8284 20.5 21H20ZM19 2V2.5C19.2761 2.5 19.5 2.72386 19.5 3H20H20.5C20.5 2.17157 19.8284 1.5 19 1.5V2ZM5 2V1.5C4.17157 1.5 3.5 2.17157 3.5 3H4H4.5C4.5 2.72386 4.72386 2.5 5 2.5V2Z" fill="#000"/><path d="M7 6H17"/><rect x="7" y="5" width="10" height="2" fill="#000"/><rect x="7" y="17" width="2" height="2" fill="#000"/><rect x="11" y="17" width="2" height="2" fill="#000"/><rect x="15" y="17" width="2" height="2" fill="#000"/><rect x="15" y="13" width="2" height="2" fill="#000"/><rect x="15" y="9" width="2" height="2" fill="#000"/><rect x="11" y="9" width="2" height="2" fill="#000"/><rect x="11" y="13" width="2" height="2" fill="#000"/><rect x="7" y="13" width="2" height="2" fill="#000"/><rect x="7" y="9" width="2" height="2" fill="#000"/></svg>
