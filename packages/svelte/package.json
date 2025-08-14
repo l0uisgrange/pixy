@@ -45,7 +45,7 @@
         "font awesome"
     ],
     "scripts": {
-        "prebuild": "tsx ./scripts/generate.ts",
+        "prebuild": "rm -r dist src & tsx ./scripts/generate.ts",
         "build": "svelte-package"
     },
     "peerDependencies": {

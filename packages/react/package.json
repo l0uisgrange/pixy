@@ -44,7 +44,7 @@
         "font awesome"
     ],
     "scripts": {
-        "prebuild": "rm -r dist & tsx ./scripts/generate.ts",
+        "prebuild": "rm -r dist src & tsx ./scripts/generate.ts",
         "build": "tsc -p ./tsconfig.json"
     },
     "peerDependencies": {

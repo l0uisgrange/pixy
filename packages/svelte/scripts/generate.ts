@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const config = {
     iconDir: path.resolve(__dirname, '../Icon.svelte'),
     iconFinalDir: path.resolve(__dirname, './../src/lib/Icon.svelte'),
-    sourceDir: path.resolve(__dirname, '../../../icons'),
+    sourceDir: path.resolve(__dirname, '../../static/icons'),
     componentsDir: path.resolve(__dirname, './../src/lib/icons'),
     mainIndexFile: path.resolve(__dirname, './../src/lib/index.ts'),
 };
