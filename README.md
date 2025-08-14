@@ -17,11 +17,11 @@
 
 ## Packages
 
-| Package | Version | Links |
-| :-------- | :------- | :--------- |
-| <img src="https://lucide.dev/framework-logos/js.svg" alt="JS logo" width="20" /> **`@pixy/js`** | ![](https://badgers.space/npm/version/@pixy/js?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/js) |
-| <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> **`@pixy/react`** | ![](https://badgers.space/npm/version/@pixy/react?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/react) | 
-| <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> **`@pixy/svelte`** | ![](https://badgers.space/npm/version/@pixy/svelte?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/svelte) |
+| Package | Version | Links                                                                                                             |
+| :-------- | :------- |:------------------------------------------------------------------------------------------------------------------|
+| <img src="https://lucide.dev/framework-logos/js.svg" alt="JS logo" width="20" /> **`@pixy/js`** | ![](https://badgers.space/npm/version/@pixy/js?theme=tailwind) | [npm](https://www.npmjs.com/package/@pixy/js) – [repo](https://github.com/l0uisgrange/pixy/tree/main/packages/js) |
+| <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> **`@pixy/react`** | ![](https://badgers.space/npm/version/@pixy/react?theme=tailwind) | [repo](https://github.com/l0uisgrange/pixy/tree/main/packages/react)                                              |                                                | 
+| <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> **`@pixy/svelte`** | ![](https://badgers.space/npm/version/@pixy/svelte?theme=tailwind) | [repo](https://github.com/l0uisgrange/pixy/tree/main/packages/svelte)                                             |
 
 ## Contributing
 

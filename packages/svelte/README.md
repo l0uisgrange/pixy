@@ -1,5 +1,5 @@
-![](https://badgers.space/npm/version/@pixy/svelte?theme=tailwind)
 ![](https://badgers.space/github/license/l0uisgrange/pixy?theme=tailwind)
+![](https://badgers.space/npm/version/@pixy/svelte?theme=tailwind)
 
 # 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/svelte.svg" alt="Svelte logo" width="20" /> Svelte
 

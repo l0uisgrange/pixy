@@ -1,7 +1,7 @@
-![](https://badgers.space/npm/version/@pixy/react?theme=tailwind)
 ![](https://badgers.space/github/license/l0uisgrange/pixy?theme=tailwind)
+![](https://badgers.space/npm/version/@pixy/react?theme=tailwind)
 
-# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="20" /> React
+# 🏜️ Pixy for <img src="https://lucide.dev/framework-logos/react.svg" alt="React logo" width="27" /> React
 
 This package ships React components for the Pixy Icons collection.
 
