@@ -14,6 +14,13 @@ const config = {
     mainIndexFile: path.resolve(__dirname, './../src/index.ts'),
 };
 
+const toPascalCase = (str: string): string => {
+    return str
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join('');
+};
+
 const main = async () => {
     try {
         console.log('——— Starting React components generation');
@@ -23,8 +30,7 @@ const main = async () => {
         let indexContent = ``;
         for (const file of svgFiles) {
             const index = svgFiles.indexOf(file);
-            const iconName = path.parse(file).name;
-            const componentName = `${iconName.charAt(0).toUpperCase() + iconName.slice(1)}`;
+            const componentName = toPascalCase(path.parse(file).name);
             const svgFileContent = fs.readFileSync(path.join(config.sourceDir, file), 'utf-8');
 
             const svgContentMatch = svgFileContent.match(/<svg[^>]*>([\s\S]*)<\/svg>/);
