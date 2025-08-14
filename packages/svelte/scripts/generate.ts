@@ -2,12 +2,12 @@ import * as fs from 'fs';
 import * as path from 'path';
 import {fileURLToPath} from 'url';
 
+// @ts-ignore
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const config = {
-    iconDir: path.resolve(__dirname, '../Icon.svelte'),
-    iconFinalDir: path.resolve(__dirname, './../src/lib/Icon.svelte'),
+    iconDir: path.resolve(__dirname, '../src/lib/Icon.svelte'),
     sourceDir: path.resolve(__dirname, '../../static/icons'),
     componentsDir: path.resolve(__dirname, './../src/lib/icons'),
     mainIndexFile: path.resolve(__dirname, './../src/lib/index.ts'),
@@ -24,7 +24,6 @@ const main = async () => {
     try {
         console.log('——— Starting Svelte components generation');
         fs.mkdirSync(config.componentsDir, { recursive: true });
-        fs.copyFileSync(config.iconDir, config.iconFinalDir);
         const svgFiles = fs.readdirSync(config.sourceDir).filter(file => file.endsWith('.svg'));
         let indexContent = ``;
         for (const file of svgFiles) {
@@ -63,4 +62,5 @@ const main = async () => {
     }
 };
 
+// @ts-ignore
 await main();
